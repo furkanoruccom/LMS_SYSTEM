@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LMS_SYSTEM</name>
+    </assembly>
+    <members>
+        <member name="M:LMS_SYSTEM.Controllers.lessonsController.Getlessons">
+            <summary>
+            Tüm Derslerim Getirilmesi İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.lessonsController.Getlessons(System.Int32)">
+            <summary>
+            Belirli bir Dersin Getirilmesi İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.lessonsController.Putlessons(System.Int32,LMS_SYSTEM.Models.lessons)">
+            <summary>
+            Belirli bir Dersin Düzenlenmesi İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.lessonsController.Postlessons(LMS_SYSTEM.Models.lessons)">
+            <summary>
+            Dersin Eklenmesi İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.lessonsController.Deletelessons(System.Int32)">
+            <summary>
+            Dersin Silinmesi İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.school_workController.Getschool_work">
+            <summary>
+            Tüm Ödevlerin Getirilmesi İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.school_workController.Getschool_work(System.Int32)">
+            <summary>
+            Belir bir Id ye Göre Ödev alma işlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.school_workController.Putschool_work(System.Int32,LMS_SYSTEM.Models.school_work)">
+            <summary>
+            Ödev Düzenleme İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.school_workController.Postschool_work(LMS_SYSTEM.Models.school_work)">
+            <summary>
+            Ödevi Ekleme İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.school_workController.Deleteschool_work(System.Int32)">
+            <summary>
+            Ödevin silinmesi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.school_workController.GetStudentAssignments(System.Int32)">
+            <summary>
+            Öğrenci Id verildiğinde o ögrenciye ait ödevlerin getilmesi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.usersController.Getusers">
+            <summary>
+            Tüm kullanıcıların Alınması İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.usersController.Getusers(System.Int32)">
+            <summary>
+            Belirli Bir Kullanıcının Alınması İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.usersController.Putusers(System.Int32,LMS_SYSTEM.Models.users)">
+            <summary>
+            Belirli Bir Kullanıcının Düzenlenmesi İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.usersController.Postusers(LMS_SYSTEM.Models.users)">
+            <summary>
+            Kullanıcı Ekleme İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LMS_SYSTEM.Controllers.usersController.Deleteusers(System.Int32)">
+            <summary>
+            Kullanıcı Silme İşlemi
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LMS_SYSTEM.Migrations.DbInit">
+            <inheritdoc />
+        </member>
+        <member name="M:LMS_SYSTEM.Migrations.DbInit.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LMS_SYSTEM.Migrations.DbInit.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LMS_SYSTEM.Migrations.DbInit.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
