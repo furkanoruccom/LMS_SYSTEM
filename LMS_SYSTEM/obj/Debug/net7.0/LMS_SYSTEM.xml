@@ -41,35 +41,35 @@
         </member>
         <member name="M:LMS_SYSTEM.Controllers.school_workController.Getschool_work">
             <summary>
-            Tüm Ödevlerin Getirilmesi İşlemi
+            Tüm Ödevlerin Getilmesi
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:LMS_SYSTEM.Controllers.school_workController.Getschool_work(System.Int32)">
             <summary>
-            Belir bir Id ye Göre Ödev alma işlemi
+            Belirli Idye Göre Ödev Getirme
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:LMS_SYSTEM.Controllers.school_workController.Putschool_work(System.Int32,LMS_SYSTEM.Models.school_work)">
             <summary>
-            Ödev Düzenleme İşlemi
+            Ödev Düzenleme işlemi
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:LMS_SYSTEM.Controllers.school_workController.Postschool_work(LMS_SYSTEM.Models.school_work)">
             <summary>
-            Ödevi Ekleme İşlemi
+            Ödev Eklenme İşlemi
             </summary>
             <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:LMS_SYSTEM.Controllers.school_workController.Deleteschool_work(System.Int32)">
             <summary>
-            Ödevin silinmesi
+            Ödev Silinme işlemi
             </summary>
             <param name="id"></param>
             <returns></returns>

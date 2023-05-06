@@ -21,9 +21,8 @@ namespace LMS_SYSTEM.Controllers
             _context = context;
         }
 
-
         /// <summary>
-        /// Tüm Ödevlerin Getirilmesi İşlemi
+        /// Tüm Ödevlerin Getilmesi
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -31,17 +30,15 @@ namespace LMS_SYSTEM.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<school_work>>> Getschool_work()
         {
-            if (_context.school_work == null)
-            {
-                return NotFound();
-            }
+          if (_context.school_work == null)
+          {
+              return NotFound();
+          }
             return await _context.school_work.ToListAsync();
         }
 
-
-
         /// <summary>
-        /// Belir bir Id ye Göre Ödev alma işlemi
+        /// Belirli Idye Göre Ödev Getirme
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -49,10 +46,10 @@ namespace LMS_SYSTEM.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<school_work>> Getschool_work(int id)
         {
-            if (_context.school_work == null)
-            {
-                return NotFound();
-            }
+          if (_context.school_work == null)
+          {
+              return NotFound();
+          }
             var school_work = await _context.school_work.FindAsync(id);
 
             if (school_work == null)
@@ -65,7 +62,7 @@ namespace LMS_SYSTEM.Controllers
 
 
         /// <summary>
-        /// Ödev Düzenleme İşlemi
+        /// Ödev Düzenleme işlemi
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -100,9 +97,8 @@ namespace LMS_SYSTEM.Controllers
             return NoContent();
         }
 
-
         /// <summary>
-        /// Ödevi Ekleme İşlemi
+        /// Ödev Eklenme İşlemi
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -111,17 +107,19 @@ namespace LMS_SYSTEM.Controllers
         [HttpPost]
         public async Task<ActionResult<school_work>> Postschool_work(school_work school_work)
         {
-            if (_context.school_work == null)
-            {
-                return Problem("Entity set 'ApplicationDbContextApp.school_work'  is null.");
-            }
+          if (_context.school_work == null)
+          {
+              return Problem("Entity set 'ApplicationDbContextApp.school_work'  is null.");
+          }
             _context.school_work.Add(school_work);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("Getschool_work", new { id = school_work.Id }, school_work);
         }
+
+
         /// <summary>
-        /// Ödevin silinmesi
+        /// Ödev Silinme işlemi
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

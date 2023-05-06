@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LMS_SYSTEM.Data;
 using LMS_SYSTEM.Models;
-using LMS_SYSTEM.Class;
 
 namespace LMS_SYSTEM.Controllers
 {
