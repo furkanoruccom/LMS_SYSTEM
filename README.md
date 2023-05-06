@@ -3,9 +3,11 @@
 Proje Asp.Net Core 7 ile kodlanmıştır veri tabanı olarak Mysql kullanılmışır
 
 Yetkiler
-1 = Admin 
-2 = Öğretmen
-3 = Ögrenci
+1 = Admin,
+
+2 = Öğretmen,
+
+3 = Ögrenci,
 
 
 
